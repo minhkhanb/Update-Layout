@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Shilla PinBall Game</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png" />
+    <link rel="stylesheet" href="assets/build/app.min.css">
+</head>
+
+<body>
+
+<section class="wrapper">
+    <section class="how-to-play">
+        <main class="center-block container">
+            <section class="top-page">
+                <img src="assets/images/Lockup2.png">
+                <span class="bold-upper">How to play</span>
+                <span class="mini-title">Hit these combos to win bonus points and prizes!</span>
+            </section>
+            <section class="row">
+                <article class="col-md-4 col-xs-12">
+                    <figure>
+                        <img src="assets/images/Products.png">
+                    </figure>
+                    <span class="mini-title two">combo 1</span>
+                    <p>Hit all nine beauty products onthe gameboard</p>
+                </article>
+                <article class="col-md-4 col-xs-12">
+                    <figure>
+                        <img src="assets/images/10Circles.png">
+                    </figure>
+                    <span class="mini-title two">combo 2</span>
+                    <p>Rolling over each small circle will earn you +10 points and lighting up all small circles will trigger a special bonus for a limited period of time!</p>
+                </article>
+                <article class="col-md-4 col-xs-12">
+                    <figure>
+                        <img src="assets/images/Compacts.png">
+                    </figure>
+                    <span class="mini-title two">combo 3</span>
+                    <p>Aim to go up to the Shilla Beauty Loft staircase and hit the compact 3 times to unlock a special bonus!</p>
+                </article>
+            </section>
+            <section class="ctrl-bt">
+                <button class="bt play">play</button>
+            </section>
+        </main>
+    </section>
+    <nav id="menu">
+        <h1 class="logo"><a href="#" title=""><img src="assets/images/logo.png"></a></h1>
+        <a class="nav-bt">
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+        </a>
+        <ul>
+            <li><a href="#">play</a></li>
+            <li><a href="#">leaderboard</a></li>
+            <li><a href="#">prizes</a></li>
+            <li><a href="#">about beauty pinball</a></li>
+            <li><a href="#">about shilla duty free</a></li>
+            <li><a href="#">T&C</a></li>
+            <li><a href="#">Log in / sign up</a></li>
+        </ul>
+    </nav>
+</section>
+
+    <script src="assets/build/app.min.js"></script>
+    <script>
+        $(function () {
+            App.init();
+        });
+    </script>
+</body>
+
+</html>

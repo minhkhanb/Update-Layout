@@ -1,0 +1,365 @@
+@media only screen and (max-width: 1720px){
+	#menu ul li a{
+		padding: 10px;
+	}
+	h1.logo{
+		width: 300px;
+		margin: 8px 0 0px;
+	}
+}
+@media only screen and (max-width: 1420px){
+	#menu ul li a{
+		font-size: 13px;
+	}
+	h1.logo{
+		width: 250px;
+	}
+}
+
+@media only screen and (max-width: 1235px){
+	h1.logo {
+	    float: none;
+	    text-align: center;
+	    width: 100%;
+	}
+	#menu ul {
+	    float: none;
+	    width: 100%;
+	    overflow: hidden;
+	    text-align: center;
+	}
+	#menu ul li {
+	    float: none;
+	    display: inline-block;
+	}
+}
+
+
+@media only screen and (max-width: 1230px){
+	.container {
+	    margin: 20px auto 90px;
+	}
+}
+
+
+@media only screen and (max-width: 1010px){
+	h1.logo{
+		margin-left: 10px;
+	}
+	#menu ul li a{
+		font-size: 11px;
+	}
+}
+
+@media only screen and (max-width: 992px){
+	.board{
+		padding: 20px 90px;
+	}
+}
+
+@media only screen and (max-width: 880px){
+	#menu ul li a{
+		font-size: 9px;
+	}
+}
+
+@media only screen and (max-width: 880px){
+	.prizes-block .slider-block li.group{
+	    margin-left: 40px;
+	}
+	.prizes-block .slider-block .slider-prizes{
+		 .prev{
+		     left: -40px;
+		 }
+		.next{
+		    right: -40px;
+		}
+	}
+	.prizes-main{
+		padding-left: 50px;
+    	padding-right: 50px;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.prizes-block .slider-block li.group:after {
+	    content: '';
+	    display: block;
+	    left: -10px;
+	    right: -10px;
+	    background-color: #caaa56;
+	    top: 10px;
+	    bottom: 10px;
+	    position: absolute;
+	    border-radius: 10px;
+	}
+	.prizes-block .slider-block li.group.active:after{
+		display:none;
+	}
+	.prizes-block .slider-block li.group{
+	    margin-left: 0px;
+	    @include transform(scale(1));
+	}
+	.wrapper .long-bg{
+		background-size: 100%;
+	}
+	.prizes-block {
+	    padding-bottom: 30px;
+	    margin-top: 30px;
+	}
+	.score table td h1 {
+	    font-size: 18px;
+	}
+	.score span.number {
+	    font-size: 30px;
+	}
+	.your-high-score .row .list-score{
+		width: 100%;
+		border-right: none;
+		height: auto;
+		padding: 15px 0;
+
+		p{
+			padding: 0;
+	    	float: right;
+		}
+		h2 {
+		    font-size: 18px;
+		    float: left;
+		}
+		h3 {
+		    float: left;
+		    margin-top: 12px;
+    		margin-left: 20px;
+		}
+		span.score {
+		    font-size: 20px;
+		}
+	}
+	.rule-block{
+		padding-bottom: 10px;
+	    margin: 20px auto 0;
+
+		h3{
+			text-align: left;
+			margin-bottom: 10px;
+		}
+		p{
+			text-align: left;	
+		}
+		&:after{
+			left: 0px;
+    		right: 0px;
+		}
+		&.last:after {
+	    	display: block;
+	    }
+		.desc-rule {
+		    display: none;
+		}
+		&.last {
+	    	margin-bottom: 50px;
+	    }
+	}
+	.rule-term{
+		text-align: center;
+	}
+	.how-to-play section.row {
+		.col-md-4, .col-xs-12{
+			margin: 10px 0;
+
+			p{
+				
+			}
+		}
+		.mobile{
+			img{
+				margin-bottom: 10px;
+			}
+		}
+	}
+	.message {
+	    border-radius: 60px;
+	    padding: 0 30px;
+    }
+	.board #Scrollbar-Container{
+	    right: 40px;
+	}
+	h1.logo{
+		display: none;
+	}
+	#menu {
+	    bottom: inherit;
+	    left:  inherit;
+	    width: 50px;
+	    height: 50px;
+	    right: 20px;
+	    top: 20px;
+	    background-color: #e0bf76;
+	    border-radius: 100px;
+
+	    .nav-bt{
+			display: block;
+			padding: 16px 10px 10px;
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			overflow: hidden;
+			cursor: pointer;
+
+			span{
+				width: 100%;
+				display: block;
+				height: 3px;
+				background-color: #ffffff;
+				margin-bottom: 5px;
+				border-radius: 3px;
+				@include transition(all 0.2s ease-in-out);
+			}
+		}
+	    &.open{
+	    	@include transition(all 0.4s ease-in);
+	    	width: 100%; height: 100%;
+	    	right: 0px;
+	    	top: 0px;
+	    	border-radius: 0;
+
+	    	.nav-bt{
+	    		top: 20px;
+	    		right: 20px;
+
+	    		.one{
+	    			@include transform(rotate(40deg) translate(5px, 5px));
+	    		}
+	    		.two{
+	    			@include transform(translateX(-200%));
+	    		}
+	    		.three{
+	    			@include transform(rotate(-40deg) translate(6px, -6px));
+	    		}
+	    	}
+	    }
+	    &.close{@include transition(all 0.2s ease-out);}
+	    > ul {
+			display: none;
+			margin: 40px 0 0;
+    		text-align: center;
+
+			li{
+				width: 100%;
+
+				a{
+					font-size: 14px;
+				    display: inline-block;
+				    padding: 15px 30px;
+				    color: #ffffff;
+
+				    &.active{
+				    	background-image: url(../images/active-mb.png);
+				    	background-repeat: no-repeat;
+				    	background-position: center;
+				    	    width: 100%;
+				    }
+				}
+			}
+		}
+	}
+	#menu>ul li:last-child {
+	    position: absolute;
+	    bottom: 0;
+	    left: 0;
+	    background-color: #ffffff;
+
+	    a{
+	    	color: #e0bf76;
+	    }
+	}
+	.mobile{
+		display: block;
+	}
+	.desktop{
+		display: none;
+	}
+	.how-to-play section.row .col-md-4 figure, .how-to-play section.row .col-xs-12 figure {
+	    height: auto;
+	}
+	.container {
+	    margin: 20px auto 50px;
+	}
+	.score-login .row .col-md-1 p{
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	.score-login{
+		    padding: 0 20px;
+	}
+	#login-form label, #sign-form label {
+	    width: 100%;
+	    text-align: left;
+	    margin-bottom: 10px;
+	}
+	.sign-up-bt{
+		padding: 15px 15px 15px 65px;
+	}
+	.videos-block h2{
+		font-size: 20px;
+	}
+	.wrapper .popup-final-score .videos-block .bg-bottom > div{
+	    padding: 10px 15px;
+	}
+	.share-desc{
+		text-transform: capitalize;
+	}
+	.wrapper>section {
+	    background-image: url(../images/BgOverlay-mb.png);
+	    background-size: 100%;
+	    background-position: top center;
+	    background-repeat: repeat-y;
+	}
+	.wrapper>section.landing {
+	    background-image: url(../images/products-mb.png);
+	    background-size: 100%;
+	    background-position: center;
+	}
+	.landing p {
+	    font-size: 15px;
+	}
+	.board .board-content #Scroller{
+		overflow: inherit;
+		    height: auto;
+	}
+	#Scrollbar-Container{
+		display: none;
+	}
+	.board {
+	    padding: 20px 20px;
+	    box-shadow: none;
+	}
+	.top-page img{
+	    width: 56%;
+	}
+	.landing main {
+		text-align: center;;
+		img{
+			width: 80%;
+		}
+	}
+	object{
+    	width: 100%;
+    }
+    .desc-score{display: none;}
+    .wrapper .popup-final-score{
+    	    padding-bottom: 230px;
+    }
+    #login-form input[type=text], #login-form input[type=password], #sign-form input[type=text], #sign-form input[type=password]{
+    	max-width: none;
+    }
+}
+
+@media only screen and (max-width: 360px){
+	.share:after{
+	    right: 70px;
+	}
+}

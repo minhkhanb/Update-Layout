@@ -1,0 +1,50 @@
+body{
+    font-size: 15px;
+    color: $text-color;
+}
+
+img {
+    max-width: 100%;
+}
+
+a{
+    color: $text-color;
+
+    &:hover{
+        color: $main-color;
+    }
+
+    &.white{
+        color: #FFF;
+
+        &:hover{
+            color: $text-color;
+        }
+    }
+
+    &.red{
+        color: $main-color;
+
+        &:hover{
+            color: $text-color;
+        }
+    }
+
+    &.link{
+        color: #0000ff;
+        text-decoration: underline;
+
+        &:hover{
+            text-decoration: none;
+        }
+    }
+
+    &.link-black{
+        color: $text-color;
+        text-decoration: underline;
+
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}

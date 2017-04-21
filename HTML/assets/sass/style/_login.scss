@@ -1,0 +1,295 @@
+#menu{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	width: 100%;
+    box-shadow: 0 0 15px 0px #c7c6c6;
+        z-index: 999;
+        
+	ul{
+		float: right;
+
+		li{
+			float: left;
+
+			a{
+				font-size:15px;
+				color: #000;
+				padding: 10px 25px;
+				    display: block;
+				text-transform: uppercase;
+
+				&.active{
+					background-color: #e0bf76;
+				}
+				&:hover{
+					opacity: 0.8;
+				}
+			}
+		}
+	}
+}
+
+.landing main{
+    max-width: 530px;
+    width: 100%;
+    margin: 0px auto 0;
+    padding: 0 20px;
+    display: block;
+
+    img{
+		width: 100%;
+	}
+}
+
+.ctrl-bt{
+	text-align: center;
+}
+
+.begin{
+	margin:0 auto;
+}
+
+.top-page {
+    text-align: center;
+}
+
+span.bold-upper {
+    display: block;
+    text-transform: uppercase;
+    margin: 40px 0 30px;
+}
+
+.how-to-play{
+	section.row{
+		margin: 30px 0;
+
+		.col-md-4, .col-xs-12{
+			text-align: center;
+			padding: 0 20px;
+			    float: left;
+
+			figure{
+				height: 120px;
+
+				img{
+					margin-top: 20px;
+				}
+			}
+			&:type-of-child(2) figure img{
+				margin-top: 0px;
+			}
+		}
+	}
+}
+
+.mini-title{
+	color: #ab8537;
+	font-size: 18px;
+	display: block;
+	margin: 10px 0;
+	font-family: 'Avenir Next';
+	font-weight: 500;
+	font-style: normal;
+	line-height: 25px;
+    letter-spacing: 1px;
+
+	&.two{
+		font-size: 17px;
+	}
+}
+
+.score-login{
+	max-width: 710px;
+	width: 100%;
+    margin: 20px auto 60px;
+
+	.row{
+		margin-top: 40px;
+		.col-md-1 p{
+			margin-top: 19px;
+    		text-transform: uppercase;
+    		font-size: 11px;
+		}
+	}
+	.desc-login{
+		font-size: 18px;
+	    line-height: 30px;
+	    margin: 20px auto 30px;
+	    max-width: 500px;
+	}
+}
+
+.sign-up-bt {
+    
+    border-radius: 6px;
+    padding: 15px 25px 15px 75px;
+    color: #4b4b4b;
+    position: relative;
+
+    &:after {
+	    content: '';
+	    display: block;
+	    position: absolute;
+	    left: 13px;
+	    top: 4px;
+	    width: 37px;
+	    height: 37px;
+	}
+	&.email{
+		background-color: #ffffff;
+		border: 1px solid #6f6f6f;
+
+		&:after {
+			background-image: url(../images/icon-email.png);
+		}
+	}
+	&.facebook{
+		color: #ffffff;
+		background-color: #49639e;
+		border: 1px solid #49639e;
+
+		&:after {
+			background-image: url(../images/icon-face.png);
+		}
+	}
+}
+
+
+#login-form, #sign-form{
+	max-width: 560px;
+	width: 100%;
+	margin: 40px auto;
+	display: none;
+
+	label {
+	    display: inline-block;
+	    margin-right: 20px;
+	    margin-top: 8px;
+	    font-size: 15px;
+	    width: 160px;
+	    text-align: right;
+	}
+	fieldset{
+		margin: 10px 0;
+		p{
+			display: inline-block;
+			line-height: 16px;
+			font-size: 13px;
+			color: #6e6e6e;
+		}
+	}
+	input[type="text"],input[type="password"]{
+		max-width: 300px;
+		width: 100%;
+		height: 35px;
+		border: 1px solid #6d6d6d;
+		border-radius: 4px;
+		display: inline-block;
+		padding: 0 10px;
+		line-height: 1;
+	}
+	.forgot-pass{
+		font-size: 13px;
+		text-decoration: underline;
+		color: #606060;
+		display: inline-block;
+		margin: 20px auto 50px;
+	}
+	input[type="checkbox"] {
+	        width: 14px;
+		    height: 14px;
+		    display: inline-block;
+		    margin: 0;
+		    margin-top: 5px;
+		    margin-right: 5px;
+		    vertical-align: text-bottom;
+	}
+	.margin-top{
+		margin-top: 30px;
+	}
+	a.show-term {
+	    color: #b39855;
+	    font-weight: 700;
+	}
+}
+
+.share-desc{
+	font-size: 18px;
+	color: #000;
+	line-height: 35px;
+	margin-top: 30px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	
+	.ball{
+		width: 37px;
+		height: 36px;
+		display: inline-block;
+		background-image: url(../images/ball.png);
+		background-position: center;
+		    vertical-align: bottom;
+	}
+}
+
+.share{
+	margin: 30px auto;
+	padding-top: 24px;
+	color: #2a2a2a;
+	position: relative;
+	
+	&:hover{
+		color:#2a2a2a;
+	}
+	&:after {
+	    content: '';
+	    width: 20px;
+	    height: 20px;
+	    display: block;
+	    position: absolute;
+	        top: 21px;
+    right: 96px;
+	    background-image: url(../images/icon-facebook.png);
+	}
+}
+
+.bt-block{
+	margin: 40px 0;
+}
+
+.or p {
+    position: relative;
+    display: block;
+    width: 40px;
+    margin: 0 auto;
+}
+
+.or {
+    margin: 20px 0;
+
+	p:after {
+	    position: absolute;
+	    top: 13px;
+	    left: 44px;
+	    width: 100px;
+	    height: 1px;
+	    content: '';
+	    background-color: #6f6f6f;
+	}
+	p:before {
+	    position: absolute;
+	    top: 13px;
+	    right: 44px;
+	    width: 100px;
+	    height: 1px;
+	    content: '';
+	    background-color: #6f6f6f;
+	}
+}
+
+.score-block {
+	figure{
+	    margin: 20px 0;
+	}
+}

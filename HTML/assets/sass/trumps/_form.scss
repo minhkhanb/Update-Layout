@@ -1,0 +1,19 @@
+.custom-select{
+    background: none;
+}
+
+label.selectbox{
+    position: relative;
+    &:after{
+        content: "";
+        display: block;
+        border-top: 10px solid #002c72;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        position: absolute;
+        right: 12px;
+        z-index: -1;
+        @include transform(translateY(-50%));
+        top: 50%;
+    }
+}
